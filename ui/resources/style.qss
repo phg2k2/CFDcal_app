@@ -1,0 +1,94 @@
+/* TỔNG THỂ ỨNG DỤNG */
+QWidget {
+    background-color: #f5f6f7;
+    font-family: "Segoe UI", "Arial", sans-serif;
+    font-size: 13px;
+    color: #2c3e50;
+}
+
+/* CÁC NHÓM THÔNG SỐ (Group Box) */
+QGroupBox {
+    font-weight: bold;
+    border: 2px solid #dcdde1;
+    border-radius: 6px;
+    margin-top: 12px;
+    padding-top: 10px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    left: 10px;
+    padding: 0 5px;
+    color: #2980b9; /* Màu xanh kỹ thuật chuyên nghiệp */
+}
+
+/* Ô NHẬP LIỆU (Line Edit) */
+QLineEdit {
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    padding: 4px;
+    background-color: white;
+    selection-background-color: #3498db;
+}
+
+QLineEdit:focus {
+    border: 2px solid #3498db; /* Làm nổi bật ô đang nhập */
+}
+
+/* NÚT BẤM (Push Button) */
+QPushButton {
+    background-color: #2c3e50;
+    color: white;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-weight: bold;
+    min-height: 25px;
+}
+
+QPushButton:hover {
+    background-color: #34495e;
+}
+
+QPushButton:pressed {
+    background-color: #1a252f;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+/* BẢNG KẾT QUẢ (Table Widget) */
+QTableWidget {
+    background-color: white;
+    alternate-background-color: #f8f9fa;
+    gridline-color: #dcdde1;
+    border: 1px solid #dcdde1;
+}
+
+QHeaderView::section {
+    background-color: #ecf0f1;
+    padding: 4px;
+    border: 1px solid #dcdde1;
+    font-weight: bold;
+}
+
+/* HỆ THỐNG TABS */
+QTabWidget::pane {
+    border: 1px solid #dcdde1;
+    top: -1px;
+    background: white;
+}
+
+QTabBar::tab {
+    background: #ecf0f1;
+    border: 1px solid #dcdde1;
+    padding: 8px 20px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+QTabBar::tab:selected {
+    background: white;
+    border-bottom-color: white;
+    color: #2980b9;
+    font-weight: bold;
+}
